@@ -1,0 +1,169 @@
+$video: #1e4a4c;
+
+body {
+  overflow-x: hidden;
+}
+
+.fluid-container {
+  
+
+  .project-row {
+    height: 100%;
+
+    .project-col {
+
+      .project-icons-row {
+
+
+        .project-header-col{
+
+
+
+        }
+
+        .project-list-col {
+          transition: top 0.3s linear;
+
+          &.show {
+            top: 0rem;
+          }
+
+          .project-list-col-row {
+            
+            .project-list {
+              display: grid;
+              list-style: none;
+              padding-left: 0;
+
+              .project-item {
+                display: block;
+                width: 100%;
+                justify-content: center;
+
+                img {
+                  width: 15%;
+                  cursor: pointer;
+                  margin: 0 1.5rem;
+                  padding: 3px 4px;
+
+                  &.active {
+                    border-left: 3px solid rgba(0, 162, 255, 0.719);
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+
+      .project-details {
+
+        .fab-form {
+          opacity: 0;
+          transition: opacity 1s linear;
+
+          &.show {
+            opacity: 1;
+          }
+        }
+
+        .project-input {
+
+          border-color:#d5d5d5;
+          border-radius: 4px;
+          margin: 0.6rem 0rem;
+          border-style: solid;
+
+          &.text-area {
+            padding-top: 1rem!important;
+            height: 61px;
+          }
+        }
+
+        .css-2b097c-container   {
+
+          margin: 0.6rem 0rem;
+
+
+          .css-g1d714-ValueContainer {
+          cursor: pointer;
+          padding: 0.5rem;
+          border-color: #d5d5d5;
+        }
+        }
+
+        .project-details-row {
+          position: relative;
+          bottom: 14rem;
+          transition: bottom 0.3s linear;
+
+          &.show {
+            bottom: 0rem;
+          }
+        }
+      }
+    }
+
+    .video-col {
+      text-align: center;
+      background-color: $video;
+            
+        .video-item {
+          list-style: none;
+          padding: 3rem 0rem;
+
+          & h1 {
+            text-align: center;
+            font-weight: 600;
+            color: #fff;
+          }
+
+          .list {
+
+            .item {
+              list-style: none;
+            }
+          }
+        }
+    }
+
+  }
+}
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #d0f500;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
